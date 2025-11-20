@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cortiez — Game Booster Berbasis Shizuku</title>
+  <meta name="description" content="Cortiez adalah aplikasi game booster berbasis Shizuku dengan fitur FPS monitor, crosshair overlay, sensitivitas, dan mode gratis/premium." />
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#38bdf8;
+      --accent2:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;color:#e6eef6;background:linear-gradient(180deg,#071022 0%, #081228 60%);
+      padding:24px;line-height:1.5;
+    }
+
+    .wrap{max-width:1000px;margin:0 auto;}
+
+    header{
+      display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;
+    }
+
+    .logo{
+      display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;
+    }
+    .logo-box{
+      width:48px;height:48px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex;justify-content:center;align-items:center;
+      font-weight:800;font-size:20px;color:#022;
+      box-shadow:0 8px 22px rgba(7,30,60,0.4);
+    }
+
+    .hero{
+      padding:28px;border-radius:var(--radius);
+      background:rgba(255,255,255,0.02);
+      display:grid;gap:20px;grid-template-columns:1fr;
+      box-shadow:0 8px 30px rgba(3,10,20,0.6);
+    }
+
+    .btn{
+      display:inline-block;padding:12px 16px;border-radius:12px;
+      color:#012;font-weight:700;text-decoration:none;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+    }
+
+    .muted{color:var(--muted)}
+
+    .grid{
+      display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px;
+    }
+
+    .card{
+      padding:18px;border-radius:var(--radius);
+      background:rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    footer{text-align:center;margin-top:30px;color:var(--muted);font-size:13px}
+
+    @media(min-width:760px){
+      .hero{grid-template-columns:1fr 360px;}
+      .grid{grid-template-columns:repeat(2,1fr);}
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">
+      <div class="logo-box">CZ</div>
+      <div>
+        <div style="font-size:1.1rem;font-weight:700">Cortiez</div>
+        <div style="font-size:12px;color:var(--muted)">Game Booster • Shizuku Powered</div>
+      </div>
+    </a>
+
+    <a href="cortiez.apk" class="btn" style="font-size:14px;padding:10px 14px;">Download</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1 style="margin:0 0 10px">Boost Performa Game-mu dengan Cortiez</h1>
+      <p class="muted" style="margin-bottom:16px">
+        Aplikasi game booster ringan berbasis Shizuku untuk performa stabil, FPS lebih konsisten,
+        sensitivitas lebih presisi, dan crosshair overlay aman — tanpa modifikasi game.
+      </p>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a href="cortiez.apk" class="btn">⬇️ Download Cortiez</a>
+        <a href="#fitur" class="muted" style="padding:10px 12px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,0.04)">Lihat Fitur</a>
+      </div>
+
+      <p class="muted" style="font-size:13px;margin-top:12px">
+        Versi: <strong style="color:var(--accent)">v1.0</strong> • Gratis & Premium tersedia
+      </p>
+    </div>
+
+    <aside style="background:rgba(255,255,255,0.02);border-radius:14px;padding:16px;">
+      <h3 style="margin:0;font-size:1rem">Tentang Cortiez</h3>
+      <p class="muted" style="font-size:14px;margin:6px 0 0">
+        Dibuat untuk para gamer yang ingin stabilitas maksimal tanpa risiko. Tidak memodifikasi file game.
+      </p>
+    </aside>
+  </section>
+
+  <!-- FITUR -->
+  <section id="fitur" style="margin-top:28px">
+    <h2 style="font-size:1.1rem;margin-bottom:10px">Fitur Utama</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🎮 Game Booster</h3>
+        <p class="muted">Optimasi RAM, CPU, dan jaringan tanpa merubah file game.</p>
+      </div>
+
+      <div class="card">
+        <h3>📊 FPS Monitor</h3>
+        <p class="muted">FPS overlay stabil — aman dan tidak mempengaruhi game.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Sensitivitas Presisi</h3>
+        <p class="muted">Pengaturan sensitivitas cerdas untuk kenyamanan kontrol.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Crosshair Overlay</h3>
+        <p class="muted">Crosshair aman di layar, tidak menyentuh resource game.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM -->
+  <section id="premium" style="margin-top:28px">
+    <h2 style="font-size:1.1rem;margin-bottom:10px">Gratis & Premium</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>⭐ Gratis</h3>
+        <p class="muted">Booster dasar, FPS monitor standar, dan beberapa crosshair.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔥 Premium</h3>
+        <p class="muted">Advanced booster, tema UI, sensitivitas pro, dan crosshair custom.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD SECTION -->
+  <section style="margin-top:28px">
+    <div class="card" style="text-align:center">
+      <h2 style="margin-bottom:10px">Download Cortiez Sekarang</h2>
+      <p class="muted">Aman • Ringan • Berbasis Shizuku</p>
+      <a href="cortiez.apk" class="btn" style="margin-top:14px;display:inline-block;font-size:16px">⬇️ Download v1.0</a>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Cortiez — Game Booster Berbasis Shizuku
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
