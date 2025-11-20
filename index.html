@@ -4,7 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cortiez — Game Booster Berbasis Shizuku</title>
-  <meta name="description" content="Cortiez adalah aplikasi game booster berbasis Shizuku dengan fitur FPS monitor, crosshair overlay, sensitivitas, dan mode gratis/premium." />
+
+  <!-- GOOGLE MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <style>
     :root{
@@ -13,14 +15,14 @@
       --muted:#9aa4b2;
       --accent:#38bdf8;
       --accent2:#7c3aed;
-      --glass: rgba(255,255,255,0.03);
       --radius:14px;
       font-family: Inter, ui-sans-serif, system-ui;
     }
 
     *{box-sizing:border-box}
     body{
-      margin:0;color:#e6eef6;background:linear-gradient(180deg,#071022 0%, #081228 60%);
+      margin:0;color:#e6eef6;
+      background:linear-gradient(180deg,#071022 0%, #081228 60%);
       padding:24px;line-height:1.5;
     }
 
@@ -72,6 +74,13 @@
       .hero{grid-template-columns:1fr 360px;}
       .grid{grid-template-columns:repeat(2,1fr);}
     }
+
+    .icon{
+      font-family:"Material Icons";
+      vertical-align:middle;
+      margin-right:6px;
+      font-size:22px;
+    }
   </style>
 </head>
 
@@ -89,7 +98,9 @@
       </div>
     </a>
 
-    <a href="cortiez.apk" class="btn" style="font-size:14px;padding:10px 14px;">Download</a>
+    <a href="cortiez.apk" class="btn" style="font-size:14px;padding:10px 14px;">
+      <span class="icon">download</span> Download
+    </a>
   </header>
 
   <!-- HERO -->
@@ -97,24 +108,34 @@
     <div>
       <h1 style="margin:0 0 10px">Boost Performa Game-mu dengan Cortiez</h1>
       <p class="muted" style="margin-bottom:16px">
-        Aplikasi game booster ringan berbasis Shizuku untuk performa stabil, FPS lebih konsisten,
-        sensitivitas lebih presisi, dan crosshair overlay aman — tanpa modifikasi game.
+        Cortiez adalah project gabungan dari <strong>IbnuXiter</strong> dan <strong>CyrustMods</strong>.
+        Dibangun dengan Shizuku untuk pengelolaan performa, overlay, dan konfigurasi game yang aman.
+      </p>
+
+      <p class="muted" style="margin-bottom:18px">
+        Cortiez juga menyediakan fitur manajemen file ke direktori:
+        <code>Android/data/com.dts.freefireth</code>
+        untuk pemasangan konfigurasi atau aset personal.
       </p>
 
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a href="cortiez.apk" class="btn">⬇️ Download Cortiez</a>
-        <a href="#fitur" class="muted" style="padding:10px 12px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,0.04)">Lihat Fitur</a>
-      </div>
+        <a href="cortiez.apk" class="btn">
+          <span class="icon">download</span> Download Cortiez
+        </a>
 
-      <p class="muted" style="font-size:13px;margin-top:12px">
-        Versi: <strong style="color:var(--accent)">v1.0</strong> • Gratis & Premium tersedia
-      </p>
+        <a href="#fitur" class="muted" style="padding:10px 12px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,0.04)">
+          <span class="icon">apps</span> Lihat Fitur
+        </a>
+      </div>
     </div>
 
     <aside style="background:rgba(255,255,255,0.02);border-radius:14px;padding:16px;">
-      <h3 style="margin:0;font-size:1rem">Tentang Cortiez</h3>
+      <h3 style="margin:0;font-size:1rem">
+        <span class="icon">info</span> Tentang Project
+      </h3>
       <p class="muted" style="font-size:14px;margin:6px 0 0">
-        Dibuat untuk para gamer yang ingin stabilitas maksimal tanpa risiko. Tidak memodifikasi file game.
+        Kolaborasi dua developer: IbnuXiter & CyrustMods. Fokus pada stabilitas dan kontrol perangkat,
+        bukan modifikasi game.
       </p>
     </aside>
   </section>
@@ -125,23 +146,28 @@
 
     <div class="grid">
       <div class="card">
-        <h3>🎮 Game Booster</h3>
-        <p class="muted">Optimasi RAM, CPU, dan jaringan tanpa merubah file game.</p>
+        <h3><span class="icon">rocket</span> Game Booster</h3>
+        <p class="muted">Optimasi RAM, CPU, dan jaringan tanpa memodifikasi game.</p>
       </div>
 
       <div class="card">
-        <h3>📊 FPS Monitor</h3>
-        <p class="muted">FPS overlay stabil — aman dan tidak mempengaruhi game.</p>
+        <h3><span class="icon">speed</span> FPS Monitor</h3>
+        <p class="muted">Overlay FPS aman, tidak menyentuh file game.</p>
       </div>
 
       <div class="card">
-        <h3>⚙️ Sensitivitas Presisi</h3>
-        <p class="muted">Pengaturan sensitivitas cerdas untuk kenyamanan kontrol.</p>
+        <h3><span class="icon">tune</span> Sensitivitas Presisi</h3>
+        <p class="muted">Pengaturan sensitivitas cerdas & responsif.</p>
       </div>
 
       <div class="card">
-        <h3>🎯 Crosshair Overlay</h3>
-        <p class="muted">Crosshair aman di layar, tidak menyentuh resource game.</p>
+        <h3><span class="icon">my_location</span> Crosshair Overlay</h3>
+        <p class="muted">Crosshair tampilan layar (overlay), aman dan tidak injeksi ke game.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="icon">folder_open</span> Manajemen File</h3>
+        <p class="muted">Dapat memasukkan file konfigurasi ke <code>Android/data/com.dts.freefireth</code>.</p>
       </div>
     </div>
   </section>
@@ -152,28 +178,19 @@
 
     <div class="grid">
       <div class="card">
-        <h3>⭐ Gratis</h3>
-        <p class="muted">Booster dasar, FPS monitor standar, dan beberapa crosshair.</p>
+        <h3><span class="icon">star_border</span> Gratis</h3>
+        <p class="muted">Booster standar, FPS, beberapa crosshair, file manager basic.</p>
       </div>
 
       <div class="card">
-        <h3>🔥 Premium</h3>
-        <p class="muted">Advanced booster, tema UI, sensitivitas pro, dan crosshair custom.</p>
+        <h3><span class="icon">workspace_premium</span> Premium</h3>
+        <p class="muted">Advanced booster, tema UI, sensitivitas pro, crosshair custom.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- DOWNLOAD SECTION -->
-  <section style="margin-top:28px">
-    <div class="card" style="text-align:center">
-      <h2 style="margin-bottom:10px">Download Cortiez Sekarang</h2>
-      <p class="muted">Aman • Ringan • Berbasis Shizuku</p>
-      <a href="cortiez.apk" class="btn" style="margin-top:14px;display:inline-block;font-size:16px">⬇️ Download v1.0</a>
     </div>
   </section>
 
   <footer>
-    © <span id="year"></span> Cortiez — Game Booster Berbasis Shizuku
+    © <span id="year"></span> Cortiez — IbnuXiter × CyrustMods
   </footer>
 
 </div>
